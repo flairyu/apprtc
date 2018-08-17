@@ -437,12 +437,16 @@ AppController.prototype.onKeyPress_ = function(event) {
 
 AppController.prototype.pushCallNavigation_ = function(roomId, roomLink) {
   if (!isChromeApp()) {
+ // --yxb
+    roomLink = roomLink.replace('http://localhost:10501/','https://dapp.umnet.cn/') 
     window.history.pushState({'roomId': roomId, 'roomLink': roomLink}, roomId,
         roomLink);
   }
 };
 
 AppController.prototype.displaySharingInfo_ = function(roomId, roomLink) {
+ // --yxb
+  roomLink = roomLink.replace('http://localhost:10501/','https://dapp.umnet.cn/') 
   this.roomLinkHref_.href = roomLink;
   this.roomLinkHref_.text = roomLink;
   this.roomLink_ = roomLink;

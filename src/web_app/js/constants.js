@@ -13,7 +13,7 @@
 
 var Constants = {
   // Action type for remote web socket communication.
-  WS_ACTION: 'ws',
+  WS_ACTION: 'wss',
   // Action type for remote xhr communication.
   XHR_ACTION: 'xhr',
   // Action type for adding a command to the remote clean up queue.
