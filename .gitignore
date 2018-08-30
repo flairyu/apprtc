@@ -1,4 +1,5 @@
 *.pyc
+*.swp
 .DS_Store
 /src/web_app/js/enums.js
 bower_components
